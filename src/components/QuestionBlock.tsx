@@ -99,9 +99,11 @@ const QuestionBlock = () => {
                         onClick={() => handleAnswer(q.id, opt.id, opt.nextQuestionId)}
                         className={`
                           px-4 py-2 rounded-xl border transition-all text-lg
+                          break-words text-center whitespace-normal
                           ${isSelected ? 'bg-blue-200 border-0 text-blue-900' : 'bg-[#f3f6f8] border-solid border-transparent text-gray-800'}
                           ${isDisabled ? 'opacity-60 cursor-not-allowed' : 'hover:border-blue-400 hover:shadow-md'}
                         `}
+
                       >
                         {opt.label}
                       </button>
